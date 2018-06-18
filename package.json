@@ -1,0 +1,22 @@
+{
+  "name": "kitchenrestore",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/heyjaypray/kitchenrestore.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/heyjaypray/kitchenrestore/issues"
+  },
+  "homepage": "https://github.com/heyjaypray/kitchenrestore#readme",
+  "dependencies": {
+    "img-slider": "^2.2.0"
+  }
+}

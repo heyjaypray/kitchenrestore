@@ -1,371 +1,1016 @@
 <!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>The Kitchen Restore.</title>
 
-        <!-- Bootstrap -->
-        <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
-        <!-- custom css -->
-        <link href="css/style.css" rel="stylesheet" type="text/css" media="screen">
-        <!-- font awesome for icons -->
-        <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet">
-        <!-- flex slider css -->
-        <link href="css/flexslider.css" rel="stylesheet" type="text/css" media="screen">
-         <link href="css/owl.transitions.css" rel="stylesheet" type="text/css" media="screen">
-        <!-- animated css  -->
-        <link href="css/animate.css" rel="stylesheet" type="text/css" media="screen">
-        <!--owl carousel css-->
-        <link href="css/owl.carousel.css" rel="stylesheet" type="text/css" media="screen">
-        <link href="css/owl.theme.css" rel="stylesheet" type="text/css" media="screen">
-        <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-        <!--[if lt IE 9]>
-          <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-          <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-        <![endif]-->
+<html>
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Kitchen Restore</title>
+    <!--plugins-->
+    <link href="assets/css/plugins/plugins.css" rel="stylesheet">
+    <!--master slider-->
+    <link rel="stylesheet" href="assets/masterslider/style/masterslider.css" />
+    <link href="assets/masterslider/skins/default/style.css" rel='stylesheet'>
+
+    <link rel="stylesheet" type="text/css" href="node_modules/img-slider/distr/imgslider.min.css">
 
 
-    </head>
-    <body>
-        <div class = "hideAfterExpire">
+    <!--cube portfolio-->
+    <link href="assets/cubeportfolio/css/cubeportfolio.min.css" rel='stylesheet'>
 
-        <!--navigation -->
-        <!-- Static navbar -->
-        <div class="navbar navbar-default navbar-static-top sticky" role="navigation">
-            <div class="container">
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                    <a class="navbar-brand" href="index.html">The Kitchen Restore.</a>
-                </div><!--.navbar header-->
-                <div class="navbar-collapse collapse">
-                    <ul class="nav navbar-nav navbar-right">
-                        <li class="active"><a href="index.html">Home</a></li>
-                        
-                        <li class="dropdown">
-                            <a href="#" class="dropdown-toggle " data-toggle="dropdown">Services <i class="fa fa-angle-down"></i></a>
-                            <ul class="dropdown-menu" role="menu">
-                                <li><a href="#">Custom Kitchen Cabinets</a></li>
-                                <li><a href="#">Kitchen Cabinet Refacing</a></li>
-                                <li><a href="#">Free Consultation</a></li>
-                                <li><a href="#">Samples</a></li>
-                                <li><a href="#">Manufacturing</a></li>
-                                <li><a href="#">Installation</a></li>
+    <link href="https://fonts.googleapis.com/css?family=Alex+Brush|Allura|Great+Vibes|Pinyon+Script|Tangerine" rel="stylesheet">
+    <!--Custom css-->
+    <link href="assets/css/style.css" rel="stylesheet">
 
-                            </ul>
-                        </li><!--.dropdown-->
-                        <li class="dropdown">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Gallery <i class="fa fa-angle-down"></i></a>
-                            <ul class="dropdown-menu" role="menu">
-                                <li><a href="#">Gallery</a></li>
-                            </ul>
-                        </li><!--.dropdown-->
-                        <li class="dropdown">
-                            <a href="#" class="dropdown-toggle " data-toggle="dropdown">Contact Us <i class="fa fa-angle-down"></i></a>
-                            <ul class="dropdown-menu" role="menu">
-                                <li><a href="#">Contact Us</a></li>
 
-                            </ul>
-                        </li><!--.dropdown-->
-                        <li class="dropdown " data-animate="animated fadeInUp" style="z-index:500;">
-                            <a href="#" class="dropdown-toggle " data-toggle="dropdown"><i class="fa fa-search"></i></a>
-                            <ul class="dropdown-menu animated fadeInUp">
-                                <li id="dropdownForm">
-                                    <div class="dropdown-form">
-                                        <form class=" form-inline">
-                                            <div class="input-group">
-                                                <input type="text" class="form-control" placeholder="search...">
-                                                <span class="input-group-btn">
-                                                    <button class="btn btn-theme-bg" type="button">Go!</button>
-                                                </span>
-                                            </div><!--input group-->
-                                        </form><!--form-->
-                                    </div><!--.dropdown form-->
-                                </li><!--.drop form search-->
-                            </ul><!--.drop menu-->
-                        </li><!--nav search form-->
-                    </ul><!--navbar-right for navbar-left replace class with navbar-left-->
-                </div><!--/.nav-collapse -->
-            </div><!--.container-->
-        </div><!--.navbar-default-->
 
-        <section class="main-slider">
-            <div class="flexslider">
-                <ul class="slides">
-                    <li style="background: url(img/3.jpeg)">
-                        <div class="slider-text">
-                            <div class="inner">
-                                <div class="container text-center">
-                                    <div class="row">
-                                        <div class="col-md-8 col-md-offset-2">
-                                            <h1>The <b>Kitchen Restore</b></h1>
-                                            <p>Quisque ligulas ipsum, euismod atras vulputate iltricies etri elit. Lorem ipsum dolor sit amet, consectetur.</p>
-                                            <a href="#" class="btn btn-lg border-white">Learn More</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div> 
+</head>
+
+<body class="one-page-wrap" data-spy="scroll">
+    <div id="preloader">
+        <div id="preloader-inner"></div>
+    </div>
+    <!--/preloader-->
+    <!--back to top-->
+    <a href="#" class="scrollToTop">
+        <i class="ion-android-arrow-dropup-circle"></i>
+    </a>
+    <!--back to top end-->
+    <nav class="navbar navbar-expand-md navbar-light fixed-top bg-faded search-header">
+
+        <div class="container">
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <h1 class="logo-shadow">European Custom Cabinets & Kitchen Restore</h1>
+
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="nav navbar-nav ml-auto smooth-scroll">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home"> Home</a>
                     </li>
-                    <li style="background: url(img/4.jpeg)">
-                        <div class="slider-text">
-                            <div class="inner">
-                                <div class="container text-center">
-                                    <div class="row">
-                                        <div class="col-md-8 col-md-offset-2">
-                                                <h1>The <b>Kitchen Restore</b></h1>
-                                            <p>Quisque ligulas ipsum, euismod atras vulputate iltricies etri elit.Lorem ipsum dolor sit amet, consectetur.</p>
-                                            <a href="#" class="btn btn-lg border-white">Learn More</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div> 
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about"> About</a>
                     </li>
-                    <li style="background: url(img/1.jpeg)">
-                        <div class="slider-text">
-                            <div class="inner">
-                                <div class="container text-center">
-                                    <div class="row">
-                                        <div class="col-md-8 col-md-offset-2">
-                                            <h1>The <b>Kitchen Restore</b></h1>
-                                            <p>Quisque ligulas ipsum, euismod atras vulputate iltricies etri elit.Lorem ipsum dolor sit amet, consectetur.</p>
-                                            <a href="#" class="btn btn-lg border-white">Learn More</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>   
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#services"> Services</a>
                     </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#work"> Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact"> Contact</a>
+                    </li>
+
                 </ul>
             </div>
-        </section>
-        <div class="divide40"></div>
-    <!--purchase section-->
-        <div class="divide80"></div>
+
+        </div>
+
+    </nav>
+    <!--nav end-->
+
+
+    <section id="home">
+        <div class="clearfix"></div>
+        <div class="slider-master">
+            <!-- Master Slider -->
+            <div class="master-slider ms-skin-default" id="masterslider">
+
+                <!-- slide 1 -->
+                <div class="ms-slide slide-1" data-delay="14">
+
+                    <!-- slide background -->
+                    <img src="assets/masterslider/style/blank.gif" data-src="assets/img/kimg/21.jpg" alt="Slide1 background" />
+
+                    <h3 class="ms-layer title_main" style="left:150px;top: 230px; font-family: 'Great Vibes', cursive;  text-shadow: 1px 1px 3px black;"
+                        data-type="text" data-delay="1500" data-duration="2500" data-ease="easeOutExpo" data-effect="rotate3dtop(-100,0,0,40,t)">You're In Good Company!</h3>
+                    <h5 class="ms-layer sub-title" style="left:150px; top: 320px; text-shadow: 1px 1px 3px black;" data-type="text" data-effect="bottom(45)"
+                        data-duration="3000" data-delay="2000" data-ease="easeOutExpo">Call Today For A Free Quote!</h5>
+                    <a class="ms-layer btn1 slide-btn uppercase" href="#" style="left: 150px; top:340px;" data-type="text" data-delay="3000"
+                        data-ease="easeOutExpo" data-duration="2500" data-effect="scale(1.5,1.6)"> Learn More
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+                    <a class="ms-layer btn2 slide-btn uppercase" href="#" style="left:300px; top:340px;" data-type="text" data-delay="3200" data-ease="easeOutExpo"
+                        data-duration="2800" data-effect="scale(1.5,1.6)"> Get In Touch!
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+                </div>
+                <!-- end of slide -->
+
+                <!-- slide 2 -->
+                <div class="ms-slide slide-2" data-delay="14">
+
+                    <!-- slide background -->
+                    <img src="assets/masterslider/style/blank.gif" data-src="assets/img/kimg/18.jpg" alt="Slide1 background" />
+
+                    <h3 class="ms-layer title_main full-wid text-center" style="left:0;top: 230px; font-family: 'Great Vibes', cursive;  text-shadow: 1px 1px 3px black;"
+                        data-type="text" data-delay="1500" data-duration="2500" data-ease="easeOutExpo" data-effect="rotate3dtop(-100,0,0,40,t)">Hand Crafted</h3>
+                    <h5 class="ms-layer sub-title full-wid text-center" style="left:0; top: 320px;  text-shadow: 1px 1px 3px black;" data-type="text"
+                        data-effect="bottom(45)" data-duration="3000" data-delay="2000" data-ease="easeOutExpo">Perfect for your next project!</h5>
+                    <a class="ms-layer btn1 slide-btn uppercase" href="#" style="left: 550px; top:340px;" data-type="text" data-delay="3000"
+                        data-ease="easeOutExpo" data-duration="2500" data-effect="scale(1.5,1.6)"> Learn More
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+                    <a class="ms-layer btn2 slide-btn uppercase" href="#" style="left:700px; top:340px;" data-type="text" data-delay="3200" data-ease="easeOutExpo"
+                        data-duration="2800" data-effect="scale(1.5,1.6)"> Get In Touch!
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+                </div>
+                <!-- end of slide -->
+
+                <!-- slide 2 -->
+                <div class="ms-slide slide-3" data-delay="14">
+
+                    <!-- slide background -->
+                    <img src="assets/masterslider/style/blank.gif" data-src="assets/img/kimg/23.jpg" alt="Slide1 background" />
+
+                    <h3 class="ms-layer title_main full-wid text-center" style="left:0;top: 230px; font-family: 'Great Vibes', cursive;  text-shadow: 1px 1px 3px black;"
+                        data-type="text" data-delay="1500" data-duration="2500" data-ease="easeOutExpo" data-effect="rotate3dtop(-100,0,0,40,t)">We Love Our Customers!</h3>
+                    <h5 class="ms-layer sub-title full-wid text-center" style="left:0; top: 320px;  text-shadow: 1px 1px 3px black;" data-type="text"
+                        data-effect="bottom(45)" data-duration="3000" data-delay="2000" data-ease="easeOutExpo"> Our Customers Are Family! </h5>
+                    <a class="ms-layer btn1 slide-btn uppercase" href="#" style="left: 550px; top:340px;" data-type="text" data-delay="3000"
+                        data-ease="easeOutExpo" data-duration="2500" data-effect="scale(1.5,1.6)"> Learn More
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+                    <a class="ms-layer btn2 slide-btn uppercase" href="#" style="left:700px; top:340px;" data-type="text" data-delay="3200" data-ease="easeOutExpo"
+                        data-duration="2800" data-effect="scale(1.5,1.6)"> Get In Touch!
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+                </div>
+                <!-- end of slide -->
+            </div>
+            <!-- end Master Slider -->
+        </div>
+    </section>
+
+
+    <!--about section end-->
+
+    <hr>
+
+    <section class="padd-section" id="side-by-side">
         <div class="container">
-            <div class="row">
-                <div class="col-md-4 margin20">
-                    <div class="service-box wow animated fadeInLeft">
-                        <h4> Custom Kitchen Cabinets</h4>
-                        <p>
-                            Quisque ligulas ipsum, euismod atras vulputate iltricies etri elit. Lorem ipsum dolor sit amet, consectetur.
-                        </p>
-                    </div><!--service box-->
-                </div><!--service-col-->
-                <div class="col-md-4 margin20">
-                    <div class="service-box wow animated fadeInLeft">
-                        <h4> Kitchen Cabinet Refacing</h4>
-                        <p>
-                            Quisque ligulas ipsum, euismod atras vulputate iltricies etri elit. Lorem ipsum dolor sit amet, consectetur.
-                        </p>
-                    </div><!--service box-->
-                </div><!--service-col-->
-                <div class="col-md-4 margin20">
-                    <div class="service-box wow animated fadeInLeft">
-                        <h4> Consultations </h4>
-                        <p>
-                            Quisque ligulas ipsum, euismod atras vulputate iltricies etri elit. Lorem ipsum dolor sit amet, consectetur.
-                        </p>
-                    </div><!--service box-->
-                </div><!--service-col-->
-            </div><!--row-->
-            <div class="divide40"></div>
-            <div class="row">
-                <div class="col-md-4 margin20">
-                    <div class="service-box wow animated fadeInLeft">
-                        <h4> Samples</h4>
-                        <p>
-                            Quisque ligulas ipsum, euismod atras vulputate iltricies etri elit. Lorem ipsum dolor sit amet, consectetur.
-                        </p>
-                    </div><!--service box-->
-                </div><!--service-col-->
-                <div class="col-md-4 margin20">
-                    <div class="service-box wow animated fadeInLeft">
-                        <h4> Manufacturing</h4>
-                        <p>
-                            Quisque ligulas ipsum, euismod atras vulputate iltricies etri elit. Lorem ipsum dolor sit amet, consectetur.
-                        </p>
-                    </div><!--service box-->
-                </div><!--service-col-->
-                <div class="col-md-4 margin20">
-                    <div class="service-box wow animated fadeInLeft">
-                        <h4></i> Installation </h4>
-                        <p>
-                            Quisque ligulas ipsum, euismod atras vulputate iltricies etri elit. Lorem ipsum dolor sit amet, consectetur.
-                        </p>
-                    </div><!--service box-->
-                </div><!--service-col-->
+            <div class="row intro-row">
+                <div class="col-md-12 text-center wow animated fadeInUp">
+                    <h2>See The Difference</h2>
+                    <h3 class="subtitle">For Yourself.</h3>
+                </div>
+                <div class="space-70"></div>
+
+                <div class="slider">
+
+                    <div class="slider responsive">
+
+                        <div class="left image">
+
+
+                            <img src="assets/img/kimg/b4/2.JPG" />
+
+                        </div>
+
+                        <div class="right image">
+
+                            <img src="assets/img/kimg/b4/1.JPG" />
+
+                        </div>
+
+                    </div>
+
+                </div>
             </div>
-        </div><!--services -->
+            <!--row end-->
+        </div>
+        <!--intro with services end-->
+    </section>
+    <!--about section end-->
 
-        <div class="divide60"></div>
-
-
-        <div class="divide80"></div>
-
-
-
-        <section class="parallax process-rounded" style="background: url(img/2.jpeg)" data-stellar-background-ratio="0.5">
+    <section class="padd-section" id="about">
+            <hr>
             <div class="container">
-                <div class="row">
-                    <div class="col-md-12 text-center">
-                        <h3></h3>
-                    </div> 
-                </div>
-                <div class="row">
-                    <div class="col-md-3 margin20">
-                        <div class="process-box">
-          
-                            
-                            </h4>
-                        </div><!--process box-->
-                    </div><!--process col-->
-                    <div class="col-md-3 margin20">
-                        <div class="process-box">
-                
-                           
-                        </div><!--process box-->
-                    </div><!--process col-->
-                    <div class="col-md-3 margin20">
-                        <div class="process-box">
-                       
-                      
-                        </div><!--process box-->
-                    </div><!--process col-->
-                    <div class="col-md-3 margin20">
-                        <div class="process-box">
-                        
-                        
-                        </div><!--process box-->
-                    </div><!--process col-->
-                </div>
-            </div>
-        </section><!--process rounded-->
 
-
-
-
-
-
-
-
-        <div class="divide80"></div>
-        <div class="container">
-            <div class="row">
-                <div class="col-md-5 margin30">
-                    <h3 class="heading">Get In Touch</h3>
-                    <div class="contact-form">
-                        <form role="form">
-                            <div class="form-group">
-                                <label for="name">Name</label>
-                                <input type="text" class="form-control" id="name">
-                            </div>
-                            <div class="form-group">
-                                <label for="mail">Email</label>
-                                <input type="email" class="form-control" id="mail" required>
-                            </div>
-                            <div class="form-group">
-                                <label for="message">Message</label>
-                                <textarea class="form-control" rows="6" id="message" required></textarea>
-                            </div>
-
-                            <button type="submit" class="btn btn-theme-bg">Send Message</button>
-                        </form><!--form-->
-                    </div><!--contact-form-->
-                </div><!--contact col-->
-                <div class="col-md-7 about-us">
-                    <h3 class="heading">About us</h3>
-                    <!-- <img src="img/team-3.jpg" class="img-responsive" alt=""> -->
-                    <p class="dropcap">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer lorem quam, adipiscing condimentum tristique vel, eleifend sed turpis. Pellentesque cursus arcu id magna euismod in elementum purus molestie.
-                        Suspendisse sit amet erat volutpat, fermentum massa in, faucibus sem.
-                    </p>
-                    <p>
-                        Duis nisl est, porta eu augue et, tempor congue mauris. Praesent a ligula in urna consectetur rhoncus. Curabitur ut nulla a velit feugiat venenatis. Nulla facilisi. Fusce viverra eu libero non euismod. Aenean in orci facilisis, ornare purus sed, lobortis augue. Cras lacinia felis ac elit elementum posuere. Vestibulum in urna metus. Suspendisse sit amet erat volutpat, fermentum massa in, faucibus sem.
-                    </p>
-
-                </div>
-            </div>
-        </div><!--contact and about us end-->
-
-
-        <footer id="footer">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12">
-                        <div class="footer-btm">
-                            <span>&copy; Copyright 2018. Site Design and Development by Think Thought Media LLC.</span>
+                <div class="row intro-row">
+                        <div class="col-md-12 text-center wow animated fadeInUp">
+                        <h2>Our Process</h2>
+                        </div>
+                    <div class="space-70"></div>
+                    <div class=" col-md-3">
+                        <div class="services-box">
+                            <img src="assets/img/kimg/icons/1.png" style="height:'70px'; width:70px">
+                            <h style="color:black">Step 1</h1>
+                            <p>
+                                Choose your door style. We have a wide selection of door styles that  can be mixed and matched to enhance your home's design and decor.
+                            </p>
                         </div>
                     </div>
+                    <!--services box-->
+                    <div class=" col-md-3">
+                        <div class="services-box">
+                            <img src="assets/img/kimg/icons/2.png" style="height:'70px'; width:70px">
+                            <h style="color:black">Step 2</h1>
+                            <p>
+                                Choose your color. We are known for our unique finishing so be sure to think "outside the box" here and make your cabinet color be the focal point of your kitchen.
+                            </p>
+                        </div>
+                    </div>
+                    <!--services box-->
+                    <div class="col-md-3">
+                        <div class="services-box">
+                            <img src="assets/img/kimg/icons/3.png" style="height:'70px'; width:70px">
+                            <h style="color:black">Step 3</h1>
+                            <p>
+                                Choose the accessories you want to simplify your life and help to keep you orgainized. Don't forget the special finishing touches to make your refaced cabinets look custom made, such as mouldings and toekicks.
+                            </p>
+                        </div>
+                    </div>
+    
+                    <div class="col-md-3">
+                        <div class="services-box">
+                            <img src="assets/img/kimg/icons/4.png" style="height:'70px'; width:70px">
+                            <h style="color:black">Step 4</h1>
+                            <p>
+                                Choose your new countertop material. We do it all from laminates in all colors, to solid surface materials, to granite. We install it and get you hooked up with plumbing and electrical. The only thing left for you to do is find a vase of flowers to decorate your new refaced kitchen
+                            </p>
+                        </div>
+                    </div>
+                    <!--services box-->
+                </div>
+                <!--row end-->
+            </div>
+            <!--intro with services end-->
+        </section>
+
+    <div class="padd-section" id="services">
+            <hr>
+        <section id="content-region-1" class="padding-40">
+            <div class="container">
+                <div class="row">
+                    <div class="col features text-xs-center">
+                        <h3>Our services</h3>
+
+                        <div class="space-30"></div>
+                        <div class="row">
+                            <div class="col-md-3 services-icon">
+                                <img src="assets/img/kimg/icons/5.png" style="height:'70px'; width:70px">
+                            </div>
+                            <div class="col-md-9 services-text">
+                                <h4 class="heading-mini">Free Consultation</h4>
+                                <p>
+                                    Our first meeting we will get to know one another and what your needs are. An inspection of the existing cabinet boxes will be done, and suggestions made as to their appropriateness for refacing. We will discuss any other design needs that you may have such as, would you like an island installed? Do you have enough storage? How about a pantry? Do you need a matching hutch in the dining room? How about an entertainment center? From there we will contact you with a price for your reFaced kitchen.
+                                </p>
+                            </div>
+                        </div>
+                        <!--services list-->
+                        <div class="space-30"></div>
+                        <div class="row">
+                            <div class="col-md-3 services-icon">
+                                <img src="assets/img/kimg/icons/6.png" style="height:'100px'; width:100px">
+                            </div>
+                            <div class="col-md-9 services-text">
+                                <h4 class="heading-mini">Samples</h4>
+                                <p>
+                                    We will bring an arrangement of cabinet samples for you to choose from, including some with our custom finishes to give you an idea of how they fit with your decor. We also have many photos of past customers that you may like to look though to get an idea of what we can do for you. While we are at it, take a look at our countertop samples too, to get a feel for what your new kitchen could possibly look like once it is all manufactured and installed.
+                                </p>
+                            </div>
+                        </div>
+                        <!--services list-->
+                        <div class="space-30"></div>
+                        <div class="row">
+                            <div class="col-md-3 services-icon">
+                                <img src="assets/img/kimg/icons/7.png" style="height:'70px'; width:70px">
+                            </div>
+                            <div class="col-md-9 services-text">
+                                <h4 class="heading-mini">Manufacturing</h4>
+                                <p>
+                                    Unlike most refacing companies who order stock cabinet doors and drawers already pre-finished, you will be getting a finishing service for the same price, because we do it ourselves. Did you just want to match an existing door color and style? We can probably do that. Our box fronts are also finished at the same time as the doors so that you can get a beautiful  refacing job that looks as if the cabihets were custom made and designed for your kitchen alone.
+                                </p>
+                            </div>
+                        </div>
+                        <!--services list-->
+                        <div class="space-30"></div>
+                        <div class="row">
+                            <div class="col-md-3 services-icon">
+                                <img src="assets/img/kimg/icons/8.png" style="height:'70px'; width:70px">
+                            </div>
+                            <div class="col-md-9 services-text">
+                                <h4 class="heading-mini">Installation</h4>
+                                <p>
+                                    Our installers have years of experience upgrading and installing kitchens. They've seen it all, which is a benefit to you because when any unforseen problems arise, they are able to think quickly on their feet and fix it with little or no down time. Other refacers have to wait for their manufacturers to send replacement hardware/materials, but we are the manufacturer so we can fix surprises as they come up.
+                                </p>
+                            </div>
+                        </div>
+                        <!--services list-->
+
+                    </div>
+                    <!-- <div class="col-md-5">
+                            <img src="assets/img/ipad.png" class="img-fluid" alt="">
+                        </div> -->
+                </div>
+
+            </div>
+            <!--container-->
+        </section>
+        <!--features end-->
+    </div>
+
+    <hr>
+
+    <section id="work" class="padd-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h3 class="heading-sec">Our Gallery</h3>
                 </div>
             </div>
-        </footer>
-        
-        
-    </div>        
-    <div class="modal fade in" id="countdown" tabindex="-1" role="dialog" aria-hidden="true">
-            <div class="modal-dialog custom-modal" role="document">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLabel">This Site Will Soon Expire</h5>
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+            <!--row-->
+        </div>
+        <div id="js-filters-mosaic-flat" class="cbp-l-filters-buttonCenter">
+            <div data-filter="*" class="cbp-filter-item-active cbp-filter-item">
+                All
+                <div class="cbp-filter-counter"></div>
+            </div>
+            <div data-filter=".kitchen" class="cbp-filter-item">
+                Kitchens
+                <div class="cbp-filter-counter"></div>
+            </div>
+            <div data-filter=".bathroom" class="cbp-filter-item">
+                Bathrooms
+                <div class="cbp-filter-counter"></div>
+            </div>
+            <div data-filter=".furniture" class="cbp-filter-item">
+                Furniture
+                <div class="cbp-filter-counter"></div>
+            </div>
+            <div data-filter=".customers" class="cbp-filter-item">
+                Happy Customers
+                <div class="cbp-filter-counter"></div>
+            </div>
+        </div>
+
+        <div id="js-grid-mosaic-flat" class="cbp cbp-l-grid-mosaic-flat">
+            <div class="cbp-item web-design graphic">
+                <a href="assets/img/kimg/gallery/1.JPG" class="cbp-caption cbp-lightbox" >
+                    <div class="cbp-caption-defaultWrap">
+                        <img src="assets/img/kimg/gallery/1.jpg" alt="">
                     </div>
-                    <div class="modal-body">
-                        <!-- Service Details Content Area -->
-                        <center><div class="service_details_content p-15">
-                            <!-- Service Details Thumb -->
-                            <!-- <div class="service_details_thumb">
-                                <img class="img-thumbnail" src="img/services-img/service-details.jpg" alt="">
-                            </div> -->
-    
-                            <p id="countdownTimer"></p>
-                            <p>For more info please contact the site administrator</p>
-                            <a href="mailto:hello@thinkthoughtmedia.com">hello@thinkthoughtmedia.com</a>
-                            
-    
-                        </div></center>
+                    <div class="cbp-caption-activeWrap">
+                        <div class="cbp-l-caption-alignCenter">
+                            <div class="cbp-l-caption-body">
+                                <!-- <div class="cbp-l-caption-title">Bolt UI</div> -->
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="cbp-item bathroom">
+                <a href="assets/img/kimg/gallery/2.jpg" class="cbp-caption cbp-lightbox" >
+                    <div class="cbp-caption-defaultWrap">
+                        <img src="assets/img/kimg/gallery/2.jpg" alt="">
+                    </div>
+                    <div class="cbp-caption-activeWrap">
+                        <div class="cbp-l-caption-alignCenter">
+                            <div class="cbp-l-caption-body">
+                                <!-- <div class="cbp-l-caption-title">World Clock</div> -->
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="cbp-item kitchen">
+                <a href="assets/img/kimg/gallery/3.jpg" class="cbp-caption cbp-lightbox" >
+                    <div class="cbp-caption-defaultWrap">
+                        <img src="assets/img/kimg/gallery/3.jpg" alt="">
+                    </div>
+                    <div class="cbp-caption-activeWrap">
+                        <div class="cbp-l-caption-alignCenter">
+                            <div class="cbp-l-caption-body">
+                                <!-- <div class="cbp-l-caption-title">WhereTO App</div> -->
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="cbp-item furniture">
+                <a href="assets/img/kimg/gallery/4.jpg" class="cbp-caption cbp-lightbox" >
+                    <div class="cbp-caption-defaultWrap">
+                        <img src="assets/img/kimg/gallery/4.jpg" alt="">
+                    </div>
+                    <div class="cbp-caption-activeWrap">
+                        <div class="cbp-l-caption-alignCenter">
+                            <div class="cbp-l-caption-body">
+                                <!-- <div class="cbp-l-caption-title">Seemple* Music</div> -->
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="cbp-item kitchen">
+                <a href="assets/img/kimg/gallery/5.jpg" class="cbp-caption cbp-lightbox" >
+                    <div class="cbp-caption-defaultWrap">
+                        <img src="assets/img/kimg/gallery/5.jpg" alt="">
+                    </div>
+                    <div class="cbp-caption-activeWrap">
+                        <div class="cbp-l-caption-alignCenter">
+                            <div class="cbp-l-caption-body">
+                                <!-- <div class="cbp-l-caption-title">iDevices</div> -->
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <div class="cbp-item kitchen customers">
+                <a href="assets/img/kimg/gallery/9.jpg" class="cbp-caption cbp-lightbox" >
+                    <div class="cbp-caption-defaultWrap">
+                        <img src="assets/img/kimg/gallery/9.jpg" alt="">
+                    </div>
+                    <div class="cbp-caption-activeWrap">
+                        <div class="cbp-l-caption-alignCenter">
+                            <div class="cbp-l-caption-body">
+                                <!-- <div class="cbp-l-caption-title">Workout Buddy</div> -->
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="cbp-item kitchen">
+                <a href="assets/img/kimg/gallery/10.jpg" class="cbp-caption cbp-lightbox" >
+                    <div class="cbp-caption-defaultWrap">
+                        <img src="assets/img/kimg/gallery/10.jpg" alt="">
+                    </div>
+                    <div class="cbp-caption-activeWrap">
+                        <div class="cbp-l-caption-alignCenter">
+                            <div class="cbp-l-caption-body">
+                                <!-- <div class="cbp-l-caption-title">Digital Menu</div> -->
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <div class="cbp-item kitchen">
+                <a href="assets/img/kimg/gallery/12.jpg" class="cbp-caption cbp-lightbox" >
+                    <div class="cbp-caption-defaultWrap">
+                        <img src="assets/img/kimg/gallery/12.jpg" alt="">
+                    </div>
+                    <div class="cbp-caption-activeWrap">
+                        <div class="cbp-l-caption-alignCenter">
+                            <div class="cbp-l-caption-body">
+                                <!-- <div class="cbp-l-caption-title">Digital Menu</div> -->
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+
+            <div class="cbp-item bathroom">
+                <a href="assets/img/kimg/gallery/14.jpg" class="cbp-caption cbp-lightbox" >
+                    <div class="cbp-caption-defaultWrap">
+                        <img src="assets/img/kimg/gallery/14.jpg" alt="">
+                    </div>
+                    <div class="cbp-caption-activeWrap">
+                        <div class="cbp-l-caption-alignCenter">
+                            <div class="cbp-l-caption-body">
+                                <!-- <div class="cbp-l-caption-title">Digital Menu</div> -->
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+
+            <div class="cbp-item furniture">
+                <a href="assets/img/kimg/gallery/16.jpg" class="cbp-caption cbp-lightbox" >
+                    <div class="cbp-caption-defaultWrap">
+                        <img src="assets/img/kimg/gallery/16.jpg" alt="">
+                    </div>
+                    <div class="cbp-caption-activeWrap">
+                        <div class="cbp-l-caption-alignCenter">
+                            <div class="cbp-l-caption-body">
+                                <!-- <div class="cbp-l-caption-title">Digital Menu</div> -->
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+
+
+            <div class="cbp-item kitchen">
+                <a href="assets/img/kimg/gallery/17.jpg" class="cbp-caption cbp-lightbox" >
+                    <div class="cbp-caption-defaultWrap">
+                        <img src="assets/img/kimg/gallery/17.jpg" alt="">
+                    </div>
+                    <div class="cbp-caption-activeWrap">
+                        <div class="cbp-l-caption-alignCenter">
+                            <div class="cbp-l-caption-body">
+                                <!-- <div class="cbp-l-caption-title">Digital Menu</div> -->
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+
+
+            <div class="cbp-item bathroom">
+                <a href="assets/img/kimg/gallery/19.jpg" class="cbp-caption cbp-lightbox" >
+                    <div class="cbp-caption-defaultWrap">
+                        <img src="assets/img/kimg/gallery/19.jpg" alt="">
+                    </div>
+                    <div class="cbp-caption-activeWrap">
+                        <div class="cbp-l-caption-alignCenter">
+                            <div class="cbp-l-caption-body">
+                                <!-- <div class="cbp-l-caption-title">Digital Menu</div> -->
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+
+            <div class="cbp-item kitchen">
+                <a href="assets/img/kimg/gallery/20.jpg" class="cbp-caption cbp-lightbox" >
+                    <div class="cbp-caption-defaultWrap">
+                        <img src="assets/img/kimg/gallery/20.jpg" alt="">
+                    </div>
+                    <div class="cbp-caption-activeWrap">
+                        <div class="cbp-l-caption-alignCenter">
+                            <div class="cbp-l-caption-body">
+                                <!-- <div class="cbp-l-caption-title">Digital Menu</div> -->
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="cbp-item showroom">
+                <a href="assets/img/kimg/gallery/21.jpg" class="cbp-caption cbp-lightbox" >
+                    <div class="cbp-caption-defaultWrap">
+                        <img src="assets/img/kimg/gallery/21.jpg" alt="">
+                    </div>
+                    <div class="cbp-caption-activeWrap">
+                        <div class="cbp-l-caption-alignCenter">
+                            <div class="cbp-l-caption-body">
+                                <!-- <div class="cbp-l-caption-title">Digital Menu</div> -->
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+
+            <div class="cbp-item showroom">
+                <a href="assets/img/kimg/gallery/22.jpg" class="cbp-caption cbp-lightbox" >
+                    <div class="cbp-caption-defaultWrap">
+                        <img src="assets/img/kimg/gallery/22.jpg" alt="">
+                    </div>
+                    <div class="cbp-caption-activeWrap">
+                        <div class="cbp-l-caption-alignCenter">
+                            <div class="cbp-l-caption-body">
+                                <!-- <div class="cbp-l-caption-title">Digital Menu</div> -->
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+
+
+
+            <div class="cbp-item kitchen">
+                <a href="assets/img/kimg/gallery/25.jpg" class="cbp-caption cbp-lightbox">
+                    <div class="cbp-caption-defaultWrap">
+                        <img src="assets/img/kimg/gallery/25.jpg" alt="">
+                    </div>
+                    <div class="cbp-caption-activeWrap">
+                        <div class="cbp-l-caption-alignCenter">
+                            <div class="cbp-l-caption-body">
+                                <!-- <div class="cbp-l-caption-title">Digital Menu</div> -->
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <div class="cbp-item kitchen">
+                <a href="assets/img/kimg/gallery/26.jpg" class="cbp-caption cbp-lightbox" >
+                    <div class="cbp-caption-defaultWrap">
+                        <img src="assets/img/kimg/gallery/26.jpg" alt="">
+                    </div>
+                    <div class="cbp-caption-activeWrap">
+                        <div class="cbp-l-caption-alignCenter">
+                            <div class="cbp-l-caption-body">
+                                <!-- <div class="cbp-l-caption-title">Digital Menu</div> -->
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+
+            <div class="cbp-item kitchen">
+                <a href="assets/img/kimg/gallery/27.jpg" class="cbp-caption cbp-lightbox">
+                    <div class="cbp-caption-defaultWrap">
+                        <img src="assets/img/kimg/gallery/27.jpg" alt="">
+                    </div>
+                    <div class="cbp-caption-activeWrap">
+                        <div class="cbp-l-caption-alignCenter">
+                            <div class="cbp-l-caption-body">
+                                <!-- <div class="cbp-l-caption-title">Digital Menu</div> -->
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <div class="cbp-item kitchen">
+                <a href="assets/img/kimg/gallery/28.jpg" class="cbp-caption cbp-lightbox" >
+                    <div class="cbp-caption-defaultWrap">
+                        <img src="assets/img/kimg/gallery/28.jpg" alt="">
+                    </div>
+                    <div class="cbp-caption-activeWrap">
+                        <div class="cbp-l-caption-alignCenter">
+                            <div class="cbp-l-caption-body">
+                                <!-- <div class="cbp-l-caption-title">Digital Menu</div> -->
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <div class="cbp-item furniture">
+                <a href="assets/img/kimg/gallery/29.jpg" class="cbp-caption cbp-lightbox" >
+                    <div class="cbp-caption-defaultWrap">
+                        <img src="assets/img/kimg/gallery/29.jpg" alt="">
+                    </div>
+                    <div class="cbp-caption-activeWrap">
+                        <div class="cbp-l-caption-alignCenter">
+                            <div class="cbp-l-caption-body">
+                                <!-- <div class="cbp-l-caption-title">Digital Menu</div> -->
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <div class="cbp-item kitchen">
+                <a href="assets/img/kimg/gallery/15.jpg" class="cbp-caption cbp-lightbox" >
+                    <div class="cbp-caption-defaultWrap">
+                        <img src="assets/img/kimg/gallery/15.jpg" alt="">
+                    </div>
+                    <div class="cbp-caption-activeWrap">
+                        <div class="cbp-l-caption-alignCenter">
+                            <div class="cbp-l-caption-body">
+                                <!-- <div class="cbp-l-caption-title">Digital Menu</div> -->
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <div class="cbp-item customers">
+                <a href="assets/img/kimg/customers/1.png" class="cbp-caption cbp-lightbox" >
+                    <div class="cbp-caption-defaultWrap">
+                        <img src="assets/img/kimg/customers/1.png" alt="">
+                    </div>
+                    <div class="cbp-caption-activeWrap">
+                        <div class="cbp-l-caption-alignCenter">
+                            <div class="cbp-l-caption-body">
+                                <!-- <div class="cbp-l-caption-title">Digital Menu</div> -->
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <div class="cbp-item customers">
+                <a href="assets/img/kimg/customers/2.png" class="cbp-caption cbp-lightbox" >
+                    <div class="cbp-caption-defaultWrap">
+                        <img src="assets/img/kimg/customers/2.png" alt="">
+                    </div>
+                    <div class="cbp-caption-activeWrap">
+                        <div class="cbp-l-caption-alignCenter">
+                            <div class="cbp-l-caption-body">
+                                <!-- <div class="cbp-l-caption-title">Digital Menu</div> -->
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <div class="cbp-item customers">
+                <a href="assets/img/kimg/customers/3.png" class="cbp-caption cbp-lightbox" >
+                    <div class="cbp-caption-defaultWrap">
+                        <img src="assets/img/kimg/customers/3.png" alt="">
+                    </div>
+                    <div class="cbp-caption-activeWrap">
+                        <div class="cbp-l-caption-alignCenter">
+                            <div class="cbp-l-caption-body">
+                                <!-- <div class="cbp-l-caption-title">Digital Menu</div> -->
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+
+            <div class="cbp-item customers">
+                <a href="assets/img/kimg/customers/4.png" class="cbp-caption cbp-lightbox" >
+                    <div class="cbp-caption-defaultWrap">
+                        <img src="assets/img/kimg/customers/4.png" alt="">
+                    </div>
+                    <div class="cbp-caption-activeWrap">
+                        <div class="cbp-l-caption-alignCenter">
+                            <div class="cbp-l-caption-body">
+                                <!-- <div class="cbp-l-caption-title">Digital Menu</div> -->
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <div class="cbp-item customers">
+                <a href="assets/img/kimg/customers/5.png" class="cbp-caption cbp-lightbox" >
+                    <div class="cbp-caption-defaultWrap">
+                        <img src="assets/img/kimg/customers/5.png" alt="">
+                    </div>
+                    <div class="cbp-caption-activeWrap">
+                        <div class="cbp-l-caption-alignCenter">
+                            <div class="cbp-l-caption-body">
+                                <!-- <div class="cbp-l-caption-title">Digital Menu</div> -->
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+
+            <div class="cbp-item customers">
+                <a href="assets/img/kimg/customers/6.png" class="cbp-caption cbp-lightbox" >
+                    <div class="cbp-caption-defaultWrap">
+                        <img src="assets/img/kimg/customers/6.png" alt="">
+                    </div>
+                    <div class="cbp-caption-activeWrap">
+                        <div class="cbp-l-caption-alignCenter">
+                            <div class="cbp-l-caption-body">
+                                <!-- <div class="cbp-l-caption-title">Digital Menu</div> -->
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+
+            <div class="cbp-item customers">
+                <a href="assets/img/kimg/customers/7.jpg" class="cbp-caption cbp-lightbox" >
+                    <div class="cbp-caption-defaultWrap">
+                        <img src="assets/img/kimg/customers/7.jpg" alt="">
+                    </div>
+                    <div class="cbp-caption-activeWrap">
+                        <div class="cbp-l-caption-alignCenter">
+                            <div class="cbp-l-caption-body">
+                                <!-- <div class="cbp-l-caption-title">Digital Menu</div> -->
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+        </div>
+
+
+
+    </section>
+
+    <div class="clearfix"></div>
+
+
+
+    <section id="content-region-2" class="padding-40 parallax-1">
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <div class="testimonials">
+                        <ul class="slides">
+                            <li>
+                                <p class="testi-text">"We were replacing an original electric cooktop (from 1956). The only cooktop that was big enough needed an extra inch in width for the cut-out. The problem was that we have a stainless steel countertop. However, Angelo from Kitchen Restore came to the rescue! Outstanding job & a reasonable price. Highly recommend!"
+                                    <p>
+                                        <span class="testi-person">Robert D. </span>
+                            </li>
+                            <li>
+                                <p class="testi-text">"We are very pleased with the craftsmanship and quality of the work that TKR did in our kitchen reface. Angelo and his co-workers were professional and courteous. They were receptive to our changes and ideas and accomplished them without any issues. We couldn't be more pleased with the outcome. Angelo Lastrina turned our kitchen cabinets into furniture quality. Thank you for a beautiful refaced kitchen that we will appreciate for years to come. Fran and Karen"
+                                    <p>
+                                        <span class="testi-person">Fran L. </span>
+                            </li>
+                            <li>
+                                <p class="testi-text">"I recently underwent a complete medical office renovation in Glastonbury, CT. After interviewing many contractors I decided on European Custom Cabinets. I was not disappointed. Their quality and old-world craftsmanship is unsurpassed. The crew was extremely helpful, courteous, prompt and detail orientated. I highly recommend them for any residential or commercial project."
+                                    <p>
+                                        <span class="testi-person">Patrick D. </span>
+                            </li>
+                        </ul>
                     </div>
                 </div>
+
             </div>
-        </div>    
-        <!--must need plugin jquery-->
-        <script src="js/jquery.min.js"></script>        
-        <!--bootstrap js plugin-->
-        <script src="bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
-        <!--easing plugin for smooth scroll-->
-        <script src="js/jquery.easing.1.3.min.js" type="text/javascript"></script>
-        <!--easing plugin for nice scroll scroll-->
+        </div>
+    </section>
+    <!--testimonials section end here-->
+    <div class="newsletter-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 ml-auto mr-auto">
+                    <h3>Get latest news from us</h3>
+                    <p>
+                        Subscribe to our newsletter
+                    </p>
+                </div>
+            </div>
+            <!--row-->
 
-        <!--sticky header-->
-        <script type="text/javascript" src="js/jquery.sticky.js"></script>
-        <!--flex slider plugin-->
-        <script src="js/jquery.flexslider-min.js" type="text/javascript"></script>
-        <!--parallax background plugin-->
-        <script src="js/jquery.stellar.min.js" type="text/javascript"></script>
-        <!--very easy to use portfolio filter plugin -->
-        <script src="js/jquery.mixitup.min.js" type="text/javascript"></script>
-        <!--digit countdown plugin-->
-        <script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
-        <!--digit countdown plugin-->
-        <script src="js/jquery.counterup.min.js" type="text/javascript"></script>
-        <!--on scroll animation-->
-        <script src="js/wow.min.js" type="text/javascript"></script> 
-        <!--owl carousel slider-->
-        <script src="js/owl.carousel.min.js" type="text/javascript"></script>
-        <!--customizable plugin edit according to your needs-->
-        <script src="js/custom.js" type="text/javascript"></script>
+            <div class="row">
+                <div class="col-md-4 ml-auto mr-auto text-center">
+                    <form method="post" action="#" class="form-subscribe">
+                        <input type="text" name="email" placeholder="Email Id..." class="form-control">
+                        <button type="submit" name="submit" class="btn theme-btn-color btn-block">Subscribe Now</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
 
-
+    <div class="space-70"></div>
 
 
+    <section id="contact">
+        <div class="space-50"></div>
+        <div id="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4 margin-btm-20">
+                        <div class="footer-col">
+                            <h3>European Custom Cabinets & <br>The Kitchen Restore</h3>
+                            <p>
+                                Family owned and operated since 1993, we specialize in combining superior service with unparalleled quality to complete the kitchen or bath of your dreams! We will transform your outdated, hard-to-clean kitchen by either replacing your current cabinets with custom ones, or by refacing them with our own customized finishes at a cost saving alternative. We also help you select the perfect colors and style that complement your home. Choose from hundreds of stylish kitchen remodeling combinations, including a complete selection of solid wood, thermofoil or exquisite laminates ranging from traditional to contemporary and everything in between. We match your existing cabinets or decor because we finish our own! It is as easy as 1-2-3-4.
+                            </p>
+                        </div>
+                        <div class="space-20"></div>
+                        <div class="footer-col">
+                            <h3>contact info</h3>
+                            <p>
+                                <i class="ion-home"></i> 2934 Main St. Suite 2</p>
+                            <p>
+                                <i class="ion-iphone"></i> 860 430 9396</p>
+                            <p>
+                                <i class="ion-email"></i> thekitchenrestore@gmail.com</p>
+                        </div>
+                        <div class="space-20"></div>
+                        <div class="footer-col">
+                            <h3>Follow us</h3>
+                            <ul class=" list-inline social-btn">
+                                <li class="list-inline-item">
+                                    <a href="#">
+                                        <i class="ion-social-facebook" data-toggle="tooltip" data-placement="top" title="" data-original-title="Like On Facebook"></i>
+                                    </a>
+                                </li>
+                                <li class="list-inline-item">
+                                    <a href="#">
+                                        <i class="ion-social-twitter" data-toggle="tooltip" data-placement="top" title="" data-original-title="Follow On twitter"></i>
+                                    </a>
+                                </li>
+                                <li class="list-inline-item">
+                                    <a href="#">
+                                        <i class="ion-social-googleplus" data-toggle="tooltip" data-placement="top" title=""
+                                            data-original-title="Follow On googleplus"></i>
+                                    </a>
+                                </li>
+                                <li class="list-inline-item">
+                                    <a href="#">
+                                        <i class="ion-social-pinterest" data-toggle="tooltip" data-placement="top" title="" data-original-title="pinterest"></i>
+                                    </a>
+                                </li>
+                                <li class="list-inline-item">
+                                    <a href="#">
+                                        <i class="ion-social-skype" data-toggle="tooltip" data-placement="top" title="" data-original-title="skype"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <!--footer social col-->
+                    </div>
+                    <!--col-4 end-->
 
-    </body>
+                    <div class="col">
+                        <div class="footer-col">
+                            <h3>Get in touch</h3>
+                            <form>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <input type="text" class="form-control" placeholder="Name...">
+                                    </div>
+                                    <div class="col-md-6">
+                                        <input type="email" class="form-control" placeholder="Email...">
+                                    </div>
+                                    <div class="col-md-12">
+                                        <input type="text" class="form-control" placeholder="Subject...">
+                                    </div>
+                                    <div class="col-md-12">
+                                        <textarea class="form-control" placeholder="Massage..." rows="7"></textarea>
+                                    </div>
+                                    <div class="col-md-12 text-right">
+                                        <button type="submit" class="btn btn-lg btn-white">Send massege</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <!--get in touch col end-->
+                </div>
+                <!--footer main row end-->
+                <div class="space-70"></div>
+                <div class="row">
+                    <div class="col-md-12 text-center footer-bottom">
+                        <!-- <a href="index.html"> <img src="assets/img/logo-white.png" alt=""></a> -->
+                        <div class="space-20"></div>
+                        <span>&copy;2018. All right resrved. Design by Think Thought Media LLC.</span>
+                    </div>
+                </div>
+                <!--footer copyright row end-->
+            </div>
+            <!--container-->
+        </div>
+        <!--footer main end-->
+    </section>
+
+
+
+    <!-- jQuery plugins. -->
+    <script src="assets/js/plugins/plugins.js"></script>
+    <script src="assets/js/app.js"></script>
+    
+    <!--page template scripts-->
+    <script src="assets/masterslider/masterslider.min.js"></script>
+    <script src="assets/js/masterslider-custom.js" type="text/javascript"></script>
+    <script src="assets/cubeportfolio/js/jquery.cubeportfolio.min.js"></script>
+    <script type="text/javascript" src="node_modules/img-slider/distr/imgslider.min.js"></script>
+    
+    <script>
+        //auto close navbar-collapse on click a
+
+        $('.slider').slider();
+
+        $('a.nav-link').on('click', function () {
+            $('.navbar-toggler:visible').click();
+        });
+        (function ($, window, document, undefined) {
+            'use strict';
+
+            // init cubeportfolio
+            $('#js-grid-mosaic-flat').cubeportfolio({
+                filters: '#js-filters-mosaic-flat',
+                layoutMode: 'mosaic',
+                sortToPreventGaps: true,
+                mediaQueries: [{
+                    width: 1500,
+                    cols: 6
+                }, {
+                    width: 1100,
+                    cols: 4
+                }, {
+                    width: 800,
+                    cols: 3
+                }, {
+                    width: 480,
+                    cols: 2,
+                    options: {
+                        caption: '',
+                        gapHorizontal: 15,
+                        gapVertical: 15
+                    }
+                }],
+                defaultFilter: '*',
+                animationType: 'fadeOutTop',
+                gapHorizontal: 0,
+                gapVertical: 0,
+                gridAdjustment: 'responsive',
+                caption: 'fadeIn',
+                displayType: 'fadeIn',
+                displayTypeSpeed: 100,
+                // lightbox
+                lightboxDelegate: '.cbp-lightbox',
+                lightboxGallery: true,
+                lightboxTitleSrc: 'data-title',
+                lightboxCounter: '<div class="cbp-popup-lightbox-counter">{{current}} of {{total}}</div>',
+            });
+        })(jQuery, window, document);
+    </script>
+</body>
+
 </html>

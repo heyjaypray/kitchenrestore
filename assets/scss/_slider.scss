@@ -1,0 +1,188 @@
+/*flex slider*/
+.slider-reg{
+    width:100%;
+}
+.main-flex-slider{
+    position: relative;
+    figure{
+        margin:0px; 
+    }
+}
+.main-flex-slider .flex-control-nav {
+    bottom: 30px;
+    margin: 0;
+    height: 14px;
+    z-index: 10;
+}
+.main-flex-slider .flex-control-paging li a{
+    @include box-shadow (none);
+    background: transparent !important;
+    border: 2px solid #ccc;
+    width:8px;
+    height: 8px;
+}
+.main-flex-slider .flex-control-paging li a.flex-active{
+    background: transparent !important;
+    border: 2px solid $skincolor;
+}
+.portfolio-details .flex-control-paging li a{
+    @include box-shadow (none);
+    background: transparent !important;
+    border: 2px solid #ccc;
+    width:8px;
+    height: 8px;
+}
+.portfolio-details .flex-control-paging li a.flex-active{
+    background: transparent !important;
+    border: 2px solid $skincolor;
+}
+.slider-overlay,
+.slider-overlay-nobg{
+    background: rgba(0,0,0,.4);
+    background-image: url("../img/pattern.png");
+    background-repeat: repeat;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+.slider-overlay-nobg{
+    background: none;
+}
+
+.slider-text{
+    text-align: center;
+    text-shadow: 1px 1px 2px #222;
+}
+.slider-text h1{
+    color:#fff;
+    margin-top: 150px;
+    font-size: 50px;
+    font-weight:400;
+    margin-bottom: 25px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.slider-text p{
+    color:#fff;
+    font-family: $secondry-font;
+    font-style: italic;
+    font-size: 20px;
+}
+.slide-btn{
+    margin-top: 40px;
+    font-family: $primary-font;
+    font-style: normal !important;
+}
+.slide-btn .btn-white{
+    padding: 14px 25px;
+}
+
+
+/**slider testimonials**/
+#content-region-2{
+    background: #555;
+    padding: 80px 0;
+    overflow:hidden;
+    .testi-person{
+        color:#fff;
+    }
+    .flex-control-paging li a{
+        background: transparent;
+        border:1px solid #fff;
+        &.flex-active{
+            background-color:#fff;
+            border-color: #fff;
+        }
+    }
+}
+
+
+
+
+
+/********************
+Carousel Bootstrap4 slider
+********************/
+.carousel.carouselBizwrap{
+    height: 500px;
+    position: relative;
+    overflow: hidden;
+    .carousel-overlay{
+                position: absolute;
+        left:0;
+        top: 0;
+        width:100%;
+        height:100%;
+        z-index: 2;
+        background-color: rgba(#000,.6);
+        background-image: url('../img/pattern.png');
+        background-repeat: repeat;
+    }
+    .carousel-inner{
+        position: absolute;
+        left:0;
+        top: 0;
+        width:100%;
+        height:100%;
+        z-index:2;
+        .carousel-item{
+            position: absolute;
+            left:0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-repeat: no-repeat;
+            background-position: top center;
+        }
+    }
+    .carousel-control-prev,.carousel-control-next{
+        z-index: 12;
+        &:after{
+            content: "";
+            font-family: "Ionicons";
+            color:#fff;
+            font-size: 60px;
+            position: absolute;
+        }
+    }
+    .carousel-control-prev:after{
+        content: "\f3d2";
+        left:15px;
+    }
+    .carousel-control-next:after{
+        content: "\f3d3";
+        right: 15px;
+    }
+    .carousel-content{
+        width:100%;
+        height: 100%;
+        position: absolute;
+        left:0;
+        top: 0;
+        z-index: 2;
+        display:table;
+        .container{
+            display: table-cell;
+            vertical-align: middle;
+            position: relative;
+            z-index: 9;
+        }
+        .pos-ab-image{
+            position: absolute;
+            right: 50px;
+            top: 0;
+        }
+        h3{
+            color: #fff;
+            font-size: 2.5rem;
+            font-weight: 400;
+            line-height: 3rem;
+        }
+        p{
+            color:rgba(#fff,.8);
+        }
+    }
+}
