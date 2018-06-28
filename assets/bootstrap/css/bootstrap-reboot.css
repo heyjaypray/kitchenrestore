@@ -307,7 +307,7 @@ progress {
   -webkit-appearance: none;
 }
 
-::-webkit-file-upload-button {
+::-webkit-file-up-button {
   font: inherit;
   -webkit-appearance: button;
 }
