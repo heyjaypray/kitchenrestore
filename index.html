@@ -343,48 +343,13 @@
 
     <hr>
 
-    <section id="work" class="padd-section">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <h3 class="heading-sec">Our Gallery</h3>
-                </div>
-            </div>
-            <!--row-->
-        </div>
-        <div id="js-filters-mosaic-flat" class="cbp-l-filters-buttonCenter filter-button-group">
-            <div data-filter="*" class="cbp-filter-item-active cbp-filter-item button">
-                All
-                <div class="cbp-filter-counter"></div>
-            </div>
-            <div data-filter=".kitchen" class="cbp-filter-item button">
-                Kitchens
-                <div class="cbp-filter-counter"></div>
-            </div>
-            <div data-filter=".bathroom" class="cbp-filter-item button">
-                Bathrooms
-                <div class="cbp-filter-counter"></div>
-            </div>
-            <div data-filter=".furniture" class="cbp-filter-item button">
-                Furniture
-                <div class="cbp-filter-counter"></div>
-            </div>
-            <div data-filter=".customers" class="cbp-filter-item button">
-                Happy Customers
-                <div class="cbp-filter-counter"></div>
-            </div>
-        </div>
+
+    <div id="root"></div>
+        
+ 
 
 
 
-    
-    
-        <div id="grid">
-            <div id="root"></div>
-        </div>
-
-
-    </section>
 
 
     
@@ -646,47 +611,12 @@
     </script>
 
 
-        <script>
-
-        // external js: masonry.pkgd.js, imagesloaded.pkgd.js
-        // init Masonry
-        var $grid = $('#grid')
-
-        console.log($grid)
-
-        $grid.imagesLoaded( function() {
-        // images have loaded
-        
-        
-            $grid.isotope({
-                itemSelector: '.grid-item',
-                percentPosition: true,
-                layoutMode: 'masonry',
-                animationEngine: 'best-available',
-                masonry: {
-                    columnWidth: '.grid-sizer'
-                }
-            });
-        });
-
-        
-
-        $('.filter-button-group').on( 'click', '.button', function(e) {
-            e.preventDefault()
-            var filterValue = $(this).attr('data-filter');
-            $grid.isotope({ filter: filterValue });
-            console.log(filterValue)
-            
-        });
-
-
-
-         </script>
 
 
 
     <script type="text/babel">
 
+    
 
 
 
@@ -701,6 +631,37 @@
             }
         }
 
+        loadMason = () => {
+            var $grid = $('.grid')
+
+            console.log($grid)
+
+            $grid.imagesLoaded( function() {
+            // images have loaded
+
+
+                $grid.isotope({
+                    itemSelector: '.grid-item',
+                    percentPosition: true,
+                    layoutMode: 'masonry',
+                    animationEngine: 'best-available',
+                    masonry: {
+                        columnWidth: '.grid-sizer'
+                    }
+                });
+            });
+
+
+
+            $('.filter-button-group').on( 'click', '.button', function(e) {
+                e.preventDefault()
+                var filterValue = $(this).attr('data-filter');
+                $grid.isotope({ filter: filterValue });
+                console.log(filterValue)
+                
+            });
+        }
+
         componentDidMount() {
            fetch(`http://localhost:1337/photos`)
            .then(res=>{
@@ -711,15 +672,53 @@
                     return (pic)
             }))
                 this.setState({photos: photos1})
+                this.loadMason();
             
         })
+
+
+        
     }
 
         render() {
             return (
+
+            <section id="work" className="padd-section">
                 <div className="container">
                     <div className="row">
-                        <div id="grid">
+                        <div className="col-md-12">
+                            <h3 className="heading-sec">Our Gallery</h3>
+                        </div>
+                    </div>
+                  
+                </div>
+
+                <div id="js-filters-mosaic-flat" className="cbp-l-filters-buttonCenter filter-button-group">
+                    <div data-filter="*" className="cbp-filter-item-active cbp-filter-item button">
+                        All
+                        <div className="cbp-filter-counter"></div>
+                    </div>
+                    <div data-filter=".kitchen" className="cbp-filter-item button">
+                        Kitchens
+                        <div className="cbp-filter-counter"></div>
+                    </div>
+                    <div data-filter=".bathroom" className="cbp-filter-item button">
+                        Bathrooms
+                        <div className="cbp-filter-counter"></div>
+                    </div>
+                    <div data-filter=".furniture" className="cbp-filter-item button">
+                        Furniture
+                        <div className="cbp-filter-counter"></div>
+                    </div>
+                    <div data-filter=".customers" className="cbp-filter-item button">
+                        Happy Customers
+                        <div className="cbp-filter-counter"></div>
+                    </div>
+                </div>
+
+                    <div className="container">
+                 
+                        <div className="grid">
                             <div className="grid-sizer"></div>
                                 { this.state.photos.map(pic=> 
                                         <div className={"grid-item " + pic.category} data-category={pic.category} key={pic.photo.url}>
@@ -728,8 +727,10 @@
                                     )
                                 }     
                         </div>
+                    
                     </div>
-                </div>
+                
+            </section>       
                
            
             )
@@ -738,11 +739,20 @@
 }
 
 
+
+
     ReactDOM.render(
         <Greeting />,
         document.getElementById('root')
     );
+
+
+
+
+    
     </script>
+
+
 
 
 
