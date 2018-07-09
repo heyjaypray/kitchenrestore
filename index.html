@@ -151,9 +151,14 @@
     </section>
 
 
+
+
     <!--about section end-->
 
     <hr>
+
+
+
 
     <section class="padd-section mt-5" id="side-by-side">
         <div class="container">
@@ -163,33 +168,44 @@
                     <h3 class="subtitle">For Yourself.</h3>
                 </div>
                 <div class="space-70"></div>
-
                 <div class="slider">
-
                     <div class="slider responsive">
-
                         <div class="left image">
-
-
                             <img src="assets/img/kimg/b4/2.JPG" />
-
                         </div>
-
                         <div class="right image">
-
                             <img src="assets/img/kimg/b4/1.JPG" />
-
                         </div>
+                    </div>
+                </div>
 
+                <div class="space-70"></div>
+
+                <div class="col-md-12 text-center wow animated fadeInUp">
+                        <!-- <h2>View More Examples</h2> -->
+                        <a href="/sliders.html"><h3 class="subtitle" style="color:black; text-decoration:underline">View More Examples</h3></a>
+                        
                     </div>
 
-                </div>
+
             </div>
-            <!--row end-->
+
+
+        </div>
+        <!--row end-->
         </div>
         <!--intro with services end-->
     </section>
-    <!--about section end-->
+
+
+
+
+
+
+
+
+
+
 
     <section class="padd-section" id="about">
         <hr>
@@ -345,14 +361,14 @@
 
 
     <div id="root"></div>
-        
- 
 
 
 
 
 
-    
+
+
+
     <div class="clearfix"></div>
 
 
@@ -523,7 +539,7 @@
                     <div class="col-md-12 text-center footer-bottom">
                         <!-- <a href="index.html"> <img src="assets/img/logo-white.png" alt=""></a> -->
                         <div class="space-20"></div>
-                        <span>&copy;2018. All right resrved. Design by Think Thought Media LLC.</span>
+                        <span>&copy; 2018. All right resrved. Design by Think Thought Media LLC.</span>
                     </div>
                 </div>
                 <!--footer copyright row end-->
@@ -545,7 +561,7 @@
     <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
 
     <!-- <script src='//cdnjs.cloudflare.com/ajax/libs/masonry/3.1.5/masonry.pkgd.min.js' /> -->
-    
+
 
     <!--page template scripts-->
     <script src="assets/masterslider/masterslider.min.js"></script>
@@ -557,6 +573,12 @@
     <script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.js"></script>
 
 
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $("#myCarousel").carousel();
+        });
+    </script>
+
     <script>
         //auto close navbar-collapse on click a
 
@@ -565,6 +587,9 @@
         $('a.nav-link').on('click', function () {
             $('.navbar-toggler:visible').click();
         });
+
+
+
         // (function ($, window, document, undefined) {
         //     'use strict';
 
@@ -663,7 +688,7 @@
         }
 
         componentDidMount() {
-           fetch(`http://localhost:1337/photos`)
+           fetch(`http://kitchenrestore.herokuapp.com/photos`)
            .then(res=>{
                return res.json()
            }).then(json => {
@@ -681,6 +706,7 @@
     }
 
         render() {
+            console.log()
             return (
 
             <section id="work" className="padd-section">
@@ -722,7 +748,7 @@
                             <div className="grid-sizer"></div>
                                 { this.state.photos.map(pic=> 
                                         <div className={"grid-item " + pic.category} data-category={pic.category} key={pic.photo.url}>
-                                            <img src={'http://localhost:1337'+pic.photo.url} /> 
+                                            <img src={pic.photo.url} /> 
                                         </div>
                                     )
                                 }     
