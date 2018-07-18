@@ -2853,7 +2853,7 @@ body { font-family: sans-serif; }
 .grid-item img {
   display: block;
   max-width: 100%;
-  border: black solid 1px;
+  border: white solid 2px;
 }
 
 .kitchenLogo {
