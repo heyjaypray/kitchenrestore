@@ -437,7 +437,7 @@
 
             <div class="row">
                 <div class="col-md-4 ml-auto mr-auto text-center">
-                    <form method="post" action="#" class="form-subscribe">
+                    <form name="subscribe" method="POST" netlify>
                         <input type="text" name="email" placeholder="Email Id..." class="form-control">
                         <button type="submit" name="submit" class="btn theme-btn-color btn-block">Subscribe Now</button>
                     </form>
@@ -525,8 +525,15 @@
                                         <input type="text" name="name" class="form-control" placeholder="Name...">
                                     </div>
                                     <div class="col-md-6">
+                                        <input type="textarea" name="Address" class="form-control" placeholder="Address...">
+                                    </div>
+                                    <div class="col-md-6">
                                         <input type="email" name="email" class="form-control" placeholder="Email...">
                                     </div>
+                                    <div class="col-md-6">
+                                        <input type="text" name="phone" class="form-control" placeholder="Phone...">
+                                    </div>
+
                                     <div class="col-md-12">
                                         <input type="text" name="subject" class="form-control" placeholder="Subject...">
                                     </div>
