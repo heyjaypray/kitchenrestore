@@ -73,7 +73,9 @@
                 </ul>
             </div>
 
-            <a href="https://search.google.com/local/writereview?placeid=ChIJ6VtxlvFO5okRkaQ-Dqf6PcA"><img src="assets/img/google.png" class="googleReview" ></a>
+            <a href="https://search.google.com/local/writereview?placeid=ChIJ6VtxlvFO5okRkaQ-Dqf6PcA">
+                <img src="assets/img/google.png" class="googleReview">
+            </a>
 
 
         </div>
@@ -92,7 +94,8 @@
                 <div class="ms-slide slide-1" data-delay="14">
 
                     <!-- slide background -->
-                    <img src="assets/masterslider/style/blank.gif" data-src="assets/img/kimg/gallery/W_Hartford_Green/11.JPG" alt="Slide1 background" />
+                    <img src="assets/masterslider/style/blank.gif" data-src="assets/img/kimg/gallery/W_Hartford_Green/11.JPG" alt="Slide1 background"
+                    />
 
                     <h3 class="ms-layer title_main" style="left:150px;top: 230px; font-family: 'Great Vibes', cursive;  text-shadow: 1px 1px 3px black;"
                         data-type="text" data-delay="1500" data-duration="2500" data-ease="easeOutExpo" data-effect="rotate3dtop(-100,0,0,40,t)">You're In Good Company!</h3>
@@ -102,8 +105,8 @@
                         data-ease="easeOutExpo" data-duration="2500" data-effect="scale(1.5,1.6)"> Learn More
                         <i class="fa fa-angle-right"></i>
                     </a>
-                    <a class="ms-layer btn2 slide-btn uppercase" href="mailto:kitchenrestore@gmail.com" style="left:300px; top:340px;" data-type="text" data-delay="3200" data-ease="easeOutExpo"
-                        data-duration="2800" data-effect="scale(1.5,1.6)"> Get In Touch!
+                    <a class="ms-layer btn2 slide-btn uppercase" href="mailto:kitchenrestore@gmail.com" style="left:300px; top:340px;" data-type="text"
+                        data-delay="3200" data-ease="easeOutExpo" data-duration="2800" data-effect="scale(1.5,1.6)"> Get In Touch!
                         <i class="fa fa-angle-right"></i>
                     </a>
                 </div>
@@ -123,8 +126,8 @@
                         data-ease="easeOutExpo" data-duration="2500" data-effect="scale(1.5,1.6)"> Learn More
                         <i class="fa fa-angle-right"></i>
                     </a>
-                    <a class="ms-layer btn2 slide-btn uppercase" href="mailto:kitchenrestore@gmail.com" style="left:700px; top:340px;" data-type="text" data-delay="3200" data-ease="easeOutExpo"
-                        data-duration="2800" data-effect="scale(1.5,1.6)"> Get In Touch!
+                    <a class="ms-layer btn2 slide-btn uppercase" href="mailto:kitchenrestore@gmail.com" style="left:700px; top:340px;" data-type="text"
+                        data-delay="3200" data-ease="easeOutExpo" data-duration="2800" data-effect="scale(1.5,1.6)"> Get In Touch!
                         <i class="fa fa-angle-right"></i>
                     </a>
                 </div>
@@ -144,8 +147,8 @@
                         data-ease="easeOutExpo" data-duration="2500" data-effect="scale(1.5,1.6)"> Learn More
                         <i class="fa fa-angle-right"></i>
                     </a>
-                    <a class="ms-layer btn2 slide-btn uppercase" href="mailto:kitchenrestore@gmail.com" style="left:700px; top:340px;" data-type="text" data-delay="3200" data-ease="easeOutExpo"
-                        data-duration="2800" data-effect="scale(1.5,1.6)"> Get In Touch!
+                    <a class="ms-layer btn2 slide-btn uppercase" href="mailto:kitchenrestore@gmail.com" style="left:700px; top:340px;" data-type="text"
+                        data-delay="3200" data-ease="easeOutExpo" data-duration="2800" data-effect="scale(1.5,1.6)"> Get In Touch!
                         <i class="fa fa-angle-right"></i>
                     </a>
                 </div>
@@ -189,9 +192,11 @@
                 <div class="col-md-4 mr-5"></div>
 
                 <div class="col-md-3 text-center wow animated fadeInUp">
-                        <!-- <h2>View More Examples</h2> -->
-                        <a href="/sliders.html"><h3 class="ms-layer btn2 slide-btn uppercase" style="color:rgb(243, 243, 243); text-decoration:underline;">View More Examples</h3></a>
-                        
+                    <!-- <h2>View More Examples</h2> -->
+                    <a href="/sliders.html">
+                        <h3 class="ms-layer btn2 slide-btn uppercase" style="color:rgb(243, 243, 243); text-decoration:underline;">View More Examples</h3>
+                    </a>
+
                 </div>
 
 
@@ -437,9 +442,14 @@
 
             <div class="row">
                 <div class="col-md-4 ml-auto mr-auto text-center">
-                    <form name="subscriptions" method="POST" netlify>
+                    <form name="subscriptions" method="POST" netlify-honeypot="bot-field" netlify>
                         <input type="text" name="email" placeholder="Email" class="form-control">
-                        
+                        <p style="display: none">
+                            <label>
+                                <input name="bot-field" />
+                            </label>
+                        </p>
+
                         <button type="submit" name="submit" class="btn theme-btn-color btn-block">Subscribe Now</button>
                     </form>
                 </div>
@@ -476,9 +486,13 @@
                             <p>
                                 <i class="ion-home"></i> 2934 Main St. Suite 2</p>
                             <p>
-                                <i class="ion-iphone"></i> <a href="tel:+18604309396">860 430 9396 </a> </p>
+                                <i class="ion-iphone"></i>
+                                <a href="tel:+18604309396">860 430 9396 </a>
+                            </p>
                             <p>
-                                <i class="ion-email"></i> <a href="mailto:kitchenrestore@gmail.com"> thekitchenrestore@gmail.com</a></p>
+                                <i class="ion-email"></i>
+                                <a href="mailto:kitchenrestore@gmail.com"> thekitchenrestore@gmail.com</a>
+                            </p>
                         </div>
                         <div class="space-20"></div>
                         <div class="footer-col">
@@ -496,21 +510,21 @@
                                 </li> -->
                                 <li class="list-inline-item">
                                     <a href="https://search.google.com/local/writereview?placeid=ChIJ6VtxlvFO5okRkaQ-Dqf6PcA">
-                                            <img src="./assets/img/google.png" style="height:100px; width: 100px;">
+                                        <img src="./assets/img/google.png" style="height:100px; width: 100px;">
                                     </a>
                                 </li>
                                 <li class="list-inline-item">
-                                        <a href="https://www.homeadvisor.com/rated.KitchenRestore.32182590.html">
-                                            <img src="./assets/img/home-advisor.png" style="height:100px; width: 100px;">
-                                        </a>
+                                    <a href="https://www.homeadvisor.com/rated.KitchenRestore.32182590.html">
+                                        <img src="./assets/img/home-advisor.png" style="height:100px; width: 100px;">
+                                    </a>
                                 </li>
                                 <li class="list-inline-item">
-                                        <a href="https://www.houzz.com/pro/thekitchenrestore/__public">
-                                            <img src="./assets/img/houzz.png" style="height:100px; width: 100px;">
-                                        </a>
+                                    <a href="https://www.houzz.com/pro/thekitchenrestore/__public">
+                                        <img src="./assets/img/houzz.png" style="height:100px; width: 100px;">
+                                    </a>
                                 </li>
-                               
-                               
+
+
                             </ul>
                         </div>
                         <!--footer social col-->
@@ -523,7 +537,9 @@
                             <form name="contact" method="POST" netlify-honeypot="bot-field" netlify>
                                 <div class="row">
                                     <p style="display: none">
-                                        <label><input name="bot-field" /></label>
+                                        <label>
+                                            <input name="bot-field" />
+                                        </label>
                                     </p>
                                     <div class="col-md-6">
                                         <input type="text" name="name" class="form-control" placeholder="Name...">
@@ -544,8 +560,6 @@
                                     <div class="col-md-12">
                                         <textarea class="form-control" name="message" placeholder="Message..." rows="7"></textarea>
                                     </div>
-                                    <div class="col-md-12">Please Use Captcha To Verify Otherwise Form Will Not Submit</div>
-                                    <div class="col-md-12" data-netlify-recaptcha></div>
                                     <div class="col-md-12 text-right">
                                         <button type="submit" class="btn btn-lg btn-white">Send massege</button>
                                     </div>
@@ -561,7 +575,9 @@
                     <div class="col-md-12 text-center footer-bottom">
                         <!-- <a href="index.html"> <img src="assets/img/logo-white.png" alt=""></a> -->
                         <div class="space-20"></div>
-                        <span>&copy; 2018. All Rights Reserved. Design by <a href="https://thinkthoughtmedia.com">Think Thought Media LLC.</a></span>
+                        <span>&copy; 2018. All Rights Reserved. Design by
+                            <a href="https://thinkthoughtmedia.com">Think Thought Media LLC.</a>
+                        </span>
                     </div>
                 </div>
                 <!--footer copyright row end-->
