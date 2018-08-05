@@ -520,7 +520,7 @@
                     <div class="col">
                         <div class="footer-col">
                             <h3>Get in touch</h3>
-                            <form name="contact" method="POST" netlify>
+                            <form name="contact" method="POST" netlify-recaptcha netlify>
                                 <div class="row">
                                     <div class="col-md-6">
                                         <input type="text" name="name" class="form-control" placeholder="Name...">
@@ -541,6 +541,7 @@
                                     <div class="col-md-12">
                                         <textarea class="form-control" name="message" placeholder="Message..." rows="7"></textarea>
                                     </div>
+                                    <div class="col-md-12">Please Use Captcha To Verify Otherwise Form Will Not Submit</div>
                                     <div class="col-md-12" data-netlify-recaptcha></div>
                                     <div class="col-md-12 text-right">
                                         <button type="submit" class="btn btn-lg btn-white">Send massege</button>
