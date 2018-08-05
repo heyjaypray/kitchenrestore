@@ -520,8 +520,11 @@
                     <div class="col">
                         <div class="footer-col">
                             <h3>Get in touch</h3>
-                            <form name="contact" method="POST" netlify-recaptcha netlify>
+                            <form name="contact" method="POST" netlify-honeypot="bot-field" netlify>
                                 <div class="row">
+                                    <p style="display: none">
+                                        <label><input name="bot-field" /></label>
+                                    </p>
                                     <div class="col-md-6">
                                         <input type="text" name="name" class="form-control" placeholder="Name...">
                                     </div>
