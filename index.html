@@ -47,14 +47,14 @@
             </button>
 
             <!-- <h1 class="logo-shadow">European Custom Cabinets & Kitchen Restore</h1> -->
-            <img src="assets/img/logo.png" class="kitchenLogo">
+            <a href="index.html" class='kitchenLogo'>
+              <img src="assets/img/logo.png" class="kitchenLogo">
+              </a>
 
 
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="nav navbar-nav ml-auto smooth-scroll">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#home"> Home</a>
-                    </li>
+
                     <li class="nav-item">
                         <a class="nav-link" href="#about"> About</a>
                     </li>
@@ -62,6 +62,10 @@
                     <li class="nav-item">
                         <a class="nav-link" href="#services"> Services</a>
                     </li>
+
+                    <li class="nav-item">
+                      <a class="nav-link" href="/testimonials.html"> Testimonials</a>
+                  </li>
 
                     <li class="nav-item">
                         <a class="nav-link" href="#work"> Gallery</a>
@@ -168,6 +172,9 @@
 
 
 
+
+
+
     <section class="padd-section mt-5" id="side-by-side">
         <div class="container">
             <div class="row intro-row">
@@ -208,6 +215,8 @@
         </div>
         <!--intro with services end-->
     </section>
+
+
 
 
 
@@ -589,6 +598,12 @@
 
 
 
+
+
+
+
+
+
     <!-- jQuery plugins. -->
     <script src="assets/js/plugins/plugins.js"></script>
     <script src="assets/js/app.js"></script>
@@ -626,6 +641,13 @@
             $('.navbar-toggler:visible').click();
         });
 
+
+        setTimeout(function(){ 
+            $("#testimonyModal").modal('show')
+
+         }, 3000);
+
+        
 
 
         // (function ($, window, document, undefined) {
